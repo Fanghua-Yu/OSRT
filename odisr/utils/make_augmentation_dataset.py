@@ -14,7 +14,7 @@ os.makedirs('datasets/DF2K-ODI/LR/X2', exist_ok=True)
 os.makedirs('datasets/DF2K-ODI/LR/X4', exist_ok=True)
 os.makedirs('datasets/DF2K-ODI/LR/X8', exist_ok=True)
 os.makedirs('datasets/DF2K-ODI/LR/X16', exist_ok=True)
-
+..
 
 def extract_odi_subimage(img_pth, save_pth, img_idx, ):
     lat_relative_aug = True
