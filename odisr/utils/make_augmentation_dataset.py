@@ -9,11 +9,11 @@ from torchvision import transforms
 from multiprocessing import Pool
 from tqdm import tqdm
 
-os.makedirs('datasets/DF2K-ODI1/HR', exist_ok=True)
-os.makedirs('datasets/DF2K-ODI1/LR/X2', exist_ok=True)
-os.makedirs('datasets/DF2K-ODI1/LR/X4', exist_ok=True)
-os.makedirs('datasets/DF2K-ODI1/LR/X8', exist_ok=True)
-os.makedirs('datasets/DF2K-ODI1/LR/X16', exist_ok=True)
+os.makedirs('datasets/DF2K-ODI/HR', exist_ok=True)
+os.makedirs('datasets/DF2K-ODI/LR/X2', exist_ok=True)
+os.makedirs('datasets/DF2K-ODI/LR/X4', exist_ok=True)
+os.makedirs('datasets/DF2K-ODI/LR/X8', exist_ok=True)
+os.makedirs('datasets/DF2K-ODI/LR/X16', exist_ok=True)
 
 
 def extract_odi_subimage(img_pth, save_pth, img_idx, ):
@@ -62,7 +62,7 @@ def extract_odi_subimage(img_pth, save_pth, img_idx, ):
                 sub_idx += 1
 
 
-save_pth = 'datasets/DF2K-ODI1'
+save_pth = 'datasets/DF2K-ODI'
 img_list = gb.glob('datasets/DIV2K_train_HR/*') + gb.glob('datasets/Flickr2K_HR/*')
 pbar = tqdm(total=len(img_list), unit='image', desc='Extract')
 pool = Pool(20)
