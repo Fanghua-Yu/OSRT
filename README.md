@@ -35,7 +35,7 @@ Fanghua Yu, [Xintao Wang](https://xinntao.github.io/), Mingdeng Cao, Gen Li, [Yi
 ## Introduction
 
 ### Fisheye Downsampling
-> In practice, ODIs are acquired by the fisheye lens and stored in ERP. Given that the low-resolution is-sue in real-world scenarios is caused by insufficient sensor precision and density, the downsampling process should be applied to original-formatted images before converting into other storage types. Thus, to be conformed with real-world imaging processes, we propose to apply uniform bicubic downsampling on Fisheye images, which are the original format of ODIs. The new downsampling process (called Fisheye downsampling) applies uniform bicubic downsam-pling on Fisheye images before converting them to ERP im-ages. Our Fisheye downsampling is more conducive to ex-ploring the geometric property of ODIs.
+> In practice, ODIs are acquired by the fisheye lens and stored in ERP. Given that the low-resolution issue in real-world scenarios is caused by insufficient sensor precision and density, the downsampling process should be applied to original-formatted images before converting into other storage types. Thus, to be conformed with real-world imaging processes, we propose to apply uniform bicubic downsampling on Fisheye images, which are the original format of ODIs. The new downsampling process (called Fisheye downsampling) applies uniform bicubic downsam-pling on Fisheye images before converting them to ERP im-ages. Our Fisheye downsampling is more conducive to ex-ploring the geometric property of ODIs.
 <p align="center">
   <img width="600" src="figs/imaging_erp_fisheye.jpg">
 </p>
